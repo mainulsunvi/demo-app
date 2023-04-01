@@ -9,4 +9,6 @@ COPY . .
 RUN python manage.py migrate
 RUN chmod +x cmd.sh
 
-CMD ["./cmd.sh"]
+EXPOSE 3000
+
+CMD ["python","manage.py","runserver","0.0.0.0:3000"]
