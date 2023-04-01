@@ -10,6 +10,6 @@ COPY . .
 RUN python manage.py migrate
 RUN chmod +x cmd.sh
 
-EXPOSE 3000
+EXPOSE 8000
 
 CMD ["./cmd.sh"]
