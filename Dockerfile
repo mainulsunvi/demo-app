@@ -6,6 +6,7 @@ WORKDIR /app
 
 COPY . .
 
+EXPOSE 3000
 
 RUN python manage.py migrate
 RUN chmod +x cmd.sh
